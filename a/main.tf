@@ -15,7 +15,7 @@ resource "random_integer" "example" {
 }
 
 output "random_integer" {
-  value = random_integer.example.result
+  value = random_integer.example.result + 1
 }
 
 data "external" "random" {
