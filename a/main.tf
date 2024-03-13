@@ -15,5 +15,5 @@ resource "random_integer" "example" {
 }
 
 output "random_integer" {
-  value = random_integer.example.result + 2
+  value = random_integer.example.result + 3
 }
