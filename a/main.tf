@@ -15,13 +15,5 @@ resource "random_integer" "example" {
 }
 
 output "random_integer" {
-  value = random_integer.example.result + 1
-}
-
-data "external" "random" {
-  program = ["${path.module}/random.sh"]
-}
-
-output "random_value_dynamic" {
-  value = data.external.random.result["random_value"]
+  value = random_integer.example.result + 2
 }
