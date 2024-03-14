@@ -7,6 +7,7 @@ terraform {
   }
 }
 
+
 provider "random" {}
 
 resource "random_integer" "example" {
